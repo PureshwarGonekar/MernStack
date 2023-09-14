@@ -88,37 +88,6 @@ app.post("/login", async (req, res) => {
 });
 
 
-app.post("/signup", async (req, res) => {
-    try {
-        const { password, confirmpassword } = req.body;
-
-        if (password !== confirmpassword) {
-            return res.status(400).send("Passwords do not match");
-        }
-
-        // Hash the password before saving it
-        const hashedPassword = await bcrypt.hash(password, 10);
-
-        const registerEmployee = new Signup({
-            firstname: req.body.firstname,
-            lastname: req.body.lastname,
-            email: req.body.email,
-            gender: req.body.gender,
-            phone: req.body.phone,
-            age: req.body.age,
-            password: hashedPassword, // Store the hashed password
-        });
-
-        const registered = await registerEmployee.save();
-        res.status(201).render("index");
-    } catch (error) {
-        console.error(error);
-        res.status(500).send(error);
-    }
-});
-
-
-
 app.listen(PORT, ()=>{
     console.log(`Server is running on port ${PORT}`);
 });
