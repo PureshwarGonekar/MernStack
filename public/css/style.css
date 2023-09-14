@@ -1,0 +1,114 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+}
+
+.logo h1 {
+    font-size: 24px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Style the cover section */
+.cover {
+    background-image: url('your-cover-image.jpg'); /* Add your cover image URL */
+    background-size: cover;
+    text-align: center;
+    padding: 100px 0;
+    background: linear-gradient(22deg, rgba(135,232,255,1) 21%, rgba(255,224,253,1) 69%, rgba(255,255,250,1) 98%);
+    color: black;
+}
+
+.cover h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cover p {
+    font-size: 18px;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: linear-gradient(22deg, rgba(240,240,237,1) 21%, rgba(244,225,243,1) 81%, rgba(255,255,250,1) 98%);
+    margin: 20px;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Style the footer */
+footer {
+
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
